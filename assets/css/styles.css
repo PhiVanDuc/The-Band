@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* -------------------- Common -------------------- */
+/* -------------------- Common -------------------- */
+/* -------------------- Common -------------------- */
+
+:root {
+    --Main-color: #000;
+}
+
+.heading {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--Main-color, #000);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.note {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 25px 0 15px 0;
+}
+
+.form-control {
+    padding: 10px;
+    width: 184px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* -------------------- Navbar -------------------- */
+/* -------------------- Navbar -------------------- */
+/* -------------------- Navbar -------------------- */
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background-color: var(--Main-color);
+    margin-top: -1px;
+}
+
+.navbar .list {
+    display: flex;
+}
+
+.navbar .list .item {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar .item > a {
+    color: white;
+    font-size: 1.6;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 16px 24px;
+}
+
+.navbar .item a:hover {
+    color: var(--Main-color);
+    background-color: #ccc;
+}
+
+.navbar .item:hover .sub-list {
+    display: block;
+}
+
+.navbar .fa-magnifying-glass {
+    color: white;
+    font-size: 1.6rem;
+    padding: 16px 24px;
+}
+
+.navbar .fa-caret-down {
+    margin-top: -1.5px;
+    font-size: 1.4rem;
+}
+
+.navbar .fa-magnifying-glass:hover {
+    color: white;
+    background-color: #f44336;
+}
+
+.navbar .list .sub-list {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 0px 52px 4px rgba(0,0,0,0.19);
+    -webkit-box-shadow: 1px 0px 52px 4px rgba(0,0,0,0.19);
+    -moz-box-shadow: 1px 0px 52px 4px rgba(0,0,0,0.19);
+}
+
+.navbar .sub-item {
+    display: inline-block;
+}
+
+.navbar .sub-item a {
+    color: #000;
+    padding: 8px 0;
+    min-width: 150px;
+    padding-left: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* -------------------- Banner -------------------- */
+/* -------------------- Banner -------------------- */
+/* -------------------- Banner -------------------- */
+
+.banner {
+    position: relative;
+    padding-top: 50%;
+    background-image: url(../image/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .desc-banner {
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.banner .heading-banner {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.banner .desc {
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* -------------------- Band -------------------- */
+/* -------------------- Band -------------------- */
+/* -------------------- Band -------------------- */
+.band {
+    margin-top: 74px;
+    margin-bottom: 112px;
+}
+
+.band .row-one {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.band .row-one .desc {
+    font-size: 1.5rem;
+    line-height: 22.5px;
+    text-align: justify;
+    margin-bottom: 62px;
+}
+
+.band .row-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.band .row-two .avatar {
+    width: 154px;
+    height: 154px;
+    object-fit: cover;
+}
+
+.band .row-two .name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* -------------------- Tour Dates -------------------- */
+/* -------------------- Tour Dates -------------------- */
+/* -------------------- Tour Dates -------------------- */
+.tour {
+    padding-top: 74px;
+    padding-bottom: 98px;
+    background-color: #000;
+}
+
+.tour .row {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tour .row-one .heading,
+.tour .row-one .note {
+    color: white;
+    text-align: center;
+}
+
+.tour .row-one .note {
+    margin-bottom: 42px;
+}
+
+.tour .row-two {
+    background-color: white;
+}
+
+.tour .row-two .tickets {
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+.tour .tickets .month,
+.tour .tickets .quantity {
+    font-size: 1.5rem;
+}
+
+.tour .tickets .month {
+    padding: 8px 0 8px 16px;
+    color: rgba(0,0,0,0.6);
+}
+
+.tour .tickets .quantity {
+    padding: 4px 8px;
+    background-color: #f44336;
+    margin-left: 16px;
+}
+.tour .tickets:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tour .tickets:last-of-type .quantity {
+    border-radius: 9999px;
+    margin-right: 32px;
+    background-color: #000;
+}
+
+.tour .row-three {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour .row-three .row-item {
+    flex-grow: 1;
+    background-color: white;
+}
+
+.tour .row-three .row-item:nth-child(2) {
+    margin: 0 16px;
+}
+
+.tour .row-three .img-place {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+}
+
+.tour .row-three .info {
+    padding: 0 16px;
+}
+
+.tour .row-three .info .place,
+.tour .row-three .info .date,
+.tour .row-three .info .desc {
+    font-size: 1.5rem;
+}
+
+.tour .row-three .info .place {
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.tour .row-three .info .desc,
+.tour .row-three .info .btn-buy,
+.tour .row-three .info .date {
+    margin-bottom: 16px;
+}
+
+.tour .row-three .info .date {
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.tour .row-three .info .btn-buy {
+    color: white;
+    padding: 8px 16px;
+    background-color: #000;
+}
+
+/* -------------------- Contact -------------------- */
+/* -------------------- Contact -------------------- */
+/* -------------------- Contact -------------------- */
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 74px;
+    margin-bottom: 112px;
+}
+
+.contact .note {
+    margin-bottom: 48px;
+}
+
+.contact .row .row-one {
+    text-align: center;
+} 
+
+.contact .row-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .row-two .info {
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
+.contact .row-two .info span {
+    margin-left: 18px;
+}
+
+.box-type {
+    font-size: 15px;
+}
+
+.box-type .column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-type .column .box-column:first-child {
+    padding-right: 16px;
+}
+
+.box-full {
+    margin-top: 10px;
+}
+
+.btn-send {
+    float: right;
+    margin-top: 16px;
+    padding: 9.5px 15px;
+    background-color: #000;
+    color: white;
+}
+
+/* -------------------- Map -------------------- */
+/* -------------------- Map -------------------- */
+/* -------------------- Map -------------------- */
+
+.map {
+    position: relative;
+    padding-top: 50%;
+    background-image: url(../image/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------- Footer -------------------- */
+/* -------------------- Footer -------------------- */
+/* -------------------- Footer -------------------- */
+.footer {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer .icon-brand {
+    font-size: 2.4rem;
+}
+
+.footer .icon-brand .fa-brands {
+    padding: 0px 16px;
+}
+
+.footer .link {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.footer .link a {
+    text-decoration: underline;
+    color: black;
+}
