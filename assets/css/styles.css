@@ -117,6 +117,7 @@ a {
 
 .navbar .sub-item {
     display: inline-block;
+    background-color: white;
 }
 
 .navbar .sub-item a {
